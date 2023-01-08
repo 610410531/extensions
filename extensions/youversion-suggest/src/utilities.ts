@@ -8,7 +8,7 @@ import { BibleBookMetadata, BibleData, BibleLanguage, BibleReference, JSONSerial
 export function normalizeSearchText(searchText: string): string {
   searchText = searchText.toLowerCase();
   // Remove all non-alphanumeric characters
-  searchText = searchText.replace(/[\W_]/gi, " ");
+  // searchText = searchText.replace(/[\W_]/gi, " ");
   // Remove extra whitespace
   searchText = searchText.trim();
   searchText = searchText.replace(/\s+/g, " ");
